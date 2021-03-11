@@ -1,0 +1,163 @@
+@font-face {
+    font-family:"Major Mono Display" ;
+    src: url(../Font/MajorMonoDisplay-Regular.ttf);
+}
+body {
+    margin: 0;
+    font-family: "Segoe UI";
+}
+a {
+    text-decoration: none;
+}
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.container {
+    width: 1170px;
+    padding: 0 15px;
+     /*margin mempengaruhi elemen blok*/
+    margin: 0 auto;
+}
+.header-left {
+    float: left;
+}
+.logo {
+    width: 310px; /*124px*/
+    margin-top: 15px; /*20px*/
+    font-family: "Major Mono Display";
+    color: whitesmoke;
+}
+.header-right {
+    float: right;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+}
+.header-right:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+}
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(../image/Sekiro.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center; /*text align mempengaruhi elemen inline dan inline block*/
+}
+.top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.top-wrapper p {
+    opacity: 0.7;
+    margin-bottom: 3px;
+}
+.btn-wrapper {
+    margin: 20px 0;
+}
+.btn-wrapper p {
+    margin: 10px 0;
+}
+.btn {
+    padding: 12px 24px; /*dalam padding atau margin kalau cuman dua nilai berarti [nilai]atas-bawah [nilai]kanan-kiri*/
+    color: white;
+    display: inline-block; /* bisa diisi block inline-block inline */
+    opacity: 0.8;
+    border-radius: 4px;
+}
+.btn:hover {
+    opacity: 1;
+}
+.signup {
+    background-color: #239b76;
+}
+.facebook {
+    background-color: #3b5998;
+    margin-right: 10px;
+}
+.twitter {
+    background-color: #55acee;
+}
+.fa {
+    margin-right: 5px;
+}
+.product-wrapper {
+    height: 500px;
+    padding-bottom: 80px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.heading {
+    padding-top: 60px; /*kalau paddin-top nya nggak ada nanti bakal ada spasi satu blok putih gitu*/
+    /*gara gara padding-top ini maneh ngecek ulang css dari awal padahal masalahnya cuman di baris ini*/
+    /*kaya bisa gitu karena elemen h2 punya margin atau padding sendiri gitu jadi kalau nggak ditentuin seenak dianya*/
+    padding-bottom: 30px;
+    color: #5f5d60;
+}
+.heading h2 {
+    font-weight: normal;
+}
+.product {
+    width: 25%;
+    float: left;
+}
+.product-icon {
+    position: relative; 
+}
+  /* Add CSS for lesson-icon */
+.product-icon p { 
+    position: absolute;
+    top:80px;
+    width: 100%;
+    color:white;
+}
+.txt-contents {
+    width: 80%;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #b3aeb5;
+
+}
+.message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.message {
+    background-color: #5dca88;
+    padding: 15px 40px;
+    cursor: pointer;
+    box-shadow: 0 7px #1a7940;
+}
+.message:active {
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+}
+.heading h3 {
+    font-weight: normal;
+}
+footer {
+    padding-top: 30px;
+}
+footer h1 {
+    width: 125px;
+    font-size: 25px;
+    font-family: "Major Mono Display";
+}
+footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+}
